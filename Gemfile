@@ -5,7 +5,7 @@ gem 'bootstrap-sass'
 gem 'coffee-rails'
 gem 'jbuilder'
 gem 'jquery-rails'
-gem 'sass-rails'
+gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier'
 gem 'turbolinks'
 gem 'slim'
@@ -30,6 +30,5 @@ group :test do
   gem 'konacha'
   gem "poltergeist"
   gem 'rspec-rails', group: :development
-  gem 'spring'
 end
 
