@@ -8,7 +8,7 @@ gem 'jquery-rails'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier'
 gem 'turbolinks'
-gem 'slim'
+gem 'slim-rails'
 gem 'sqlite3'
 
 group :doc do
