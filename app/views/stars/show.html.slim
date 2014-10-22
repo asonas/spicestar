@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong User:
+  = @star.user_id
+p
+  strong Url:
+  = @star.url
+p
+  strong Quatation:
+  = @star.quatation
+
+= link_to 'Edit', edit_star_path(@star)
+'|
+= link_to 'Back', stars_path

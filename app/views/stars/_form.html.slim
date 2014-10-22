@@ -1,0 +1,18 @@
+= form_for @star do |f|
+  - if @star.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@star.errors.count, "error")} prohibited this star from being saved:"
+      ul
+        - @star.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :user_id
+    = f.number_field :user_id
+  .field
+    = f.label :url
+    = f.text_area :url
+  .field
+    = f.label :quatation
+    = f.text_field :quatation
+  .actions = f.submit 'Save'

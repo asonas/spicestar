@@ -1,0 +1,25 @@
+h1 Listing stars
+
+table
+  thead
+    tr
+      th User
+      th Url
+      th Quatation
+      th
+      th
+      th
+
+  tbody
+    - @stars.each do |star|
+      tr
+        td = star.user_id
+        td = star.url
+        td = star.quatation
+        td = link_to 'Show', star
+        td = link_to 'Edit', edit_star_path(star)
+        td = link_to 'Destroy', star, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Star', new_star_path
